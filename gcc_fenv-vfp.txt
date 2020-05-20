@@ -1,0 +1,557 @@
+eshan@EDs-pc:~/development/newlib/newlib-cygwin/newlib/libm/machine/arm$ arm-rtems5-gcc -isystem /home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include -isystem /home/eshan/development/newlib/newlib-cygwin/newlib/libc/include -E fenv-vfp.c 
+# 1 "fenv-vfp.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "fenv-vfp.c"
+# 30 "fenv-vfp.c"
+# 1 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/machine/fenv-mangle.h" 1 3 4
+# 31 "fenv-vfp.c" 2
+
+
+
+# 1 "fenv.c" 1
+# 33 "fenv.c"
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 1 3 4
+# 15 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+# 1 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 1 3 4
+# 34 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 1 3 4
+# 24 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+# 1 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 1 3 4
+# 216 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+
+# 216 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+typedef unsigned int size_t;
+# 357 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+typedef unsigned int wint_t;
+# 25 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 2 3 4
+# 1 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/newlib.h" 1 3 4
+# 14 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/newlib.h" 3 4
+# 1 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/_newlib_version.h" 1 3 4
+# 15 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/newlib.h" 2 3 4
+# 26 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 2 3 4
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/config.h" 1 3 4
+
+
+
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/ieeefp.h" 1 3 4
+# 5 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/config.h" 2 3 4
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/features.h" 1 3 4
+# 6 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/config.h" 2 3 4
+# 27 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 2 3 4
+# 1 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/machine/_types.h" 1 3 4
+
+
+
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 1 3 4
+# 41 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef signed char __int8_t;
+
+typedef unsigned char __uint8_t;
+# 55 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef short int __int16_t;
+
+typedef short unsigned int __uint16_t;
+# 77 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef int __int32_t;
+
+typedef unsigned int __uint32_t;
+# 103 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef long long int __int64_t;
+
+typedef long long unsigned int __uint64_t;
+# 134 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef signed char __int_least8_t;
+
+typedef unsigned char __uint_least8_t;
+# 160 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef short int __int_least16_t;
+
+typedef short unsigned int __uint_least16_t;
+# 182 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef int __int_least32_t;
+
+typedef unsigned int __uint_least32_t;
+# 200 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef long long int __int_least64_t;
+
+typedef long long unsigned int __uint_least64_t;
+# 214 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/machine/_default_types.h" 3 4
+typedef long long int __intmax_t;
+
+
+
+
+
+
+
+typedef long long unsigned int __uintmax_t;
+
+
+
+
+
+
+
+typedef int __intptr_t;
+
+typedef unsigned int __uintptr_t;
+# 5 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/machine/_types.h" 2 3 4
+
+typedef __int32_t __blkcnt_t;
+
+
+typedef __int32_t __blksize_t;
+
+
+typedef __uint64_t __dev_t;
+
+
+typedef __int64_t _off_t;
+
+
+typedef _off_t _fpos_t;
+
+
+typedef __uint64_t __ino_t;
+
+
+typedef __uint32_t __mode_t;
+
+
+typedef __uint64_t _CLOCK_T_;
+
+
+typedef int _CLOCKID_T_;
+
+
+typedef int __accmode_t;
+typedef __uint32_t __fixpt_t;
+typedef int __lwpid_t;
+typedef __int64_t __rlim_t;
+# 28 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 2 3 4
+# 38 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+typedef __uint64_t __fsblkcnt_t;
+
+
+
+typedef __uint32_t __fsfilcnt_t;
+# 52 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+typedef int __pid_t;
+
+
+
+
+
+
+
+typedef unsigned short __uid_t;
+
+
+typedef unsigned short __gid_t;
+
+
+
+typedef __uint32_t __id_t;
+# 96 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+__extension__ typedef long long _off64_t;
+
+
+
+
+
+typedef _off_t __off_t;
+
+
+typedef _off64_t __loff_t;
+
+
+typedef long __key_t;
+# 131 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+typedef unsigned int __size_t;
+# 147 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+typedef signed int _ssize_t;
+# 158 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/_types.h" 3 4
+typedef _ssize_t __ssize_t;
+
+
+
+typedef struct
+{
+  int __count;
+  union
+  {
+    wint_t __wch;
+    unsigned char __wchb[4];
+  } __value;
+} _mbstate_t;
+
+
+
+
+typedef void *_iconv_t;
+
+
+
+
+
+
+typedef _CLOCK_T_ __clock_t;
+
+
+
+
+
+
+typedef __int_least64_t __time_t;
+
+
+
+
+
+typedef _CLOCKID_T_ __clockid_t;
+
+
+typedef unsigned long __timer_t;
+
+
+typedef __uint8_t __sa_family_t;
+
+
+
+typedef __uint32_t __socklen_t;
+
+
+typedef int __nl_item;
+typedef unsigned short __nlink_t;
+typedef long __suseconds_t;
+typedef unsigned long __useconds_t;
+
+
+
+
+
+
+
+typedef __builtin_va_list __va_list;
+# 35 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 2 3 4
+# 1 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/cdefs.h" 1 3 4
+# 47 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/cdefs.h" 3 4
+# 1 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 1 3 4
+# 149 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+typedef int ptrdiff_t;
+# 328 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+typedef unsigned int wchar_t;
+# 426 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+# 437 "/home/eshan/development/rtems/5/lib/gcc/arm-rtems5/7.5.0/include/stddef.h" 3 4
+} max_align_t;
+# 48 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/sys/cdefs.h" 2 3 4
+# 36 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 2 3 4
+# 45 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+typedef int fenv_t;
+typedef int fexcept_t;
+# 88 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+extern const fenv_t *_fe_dfl_env;
+# 127 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+ inline int 
+# 127 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+                        __vfp_feclearexcept
+# 127 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+                                     (int excepts)
+{
+ fexcept_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ __fpsr &= ~excepts;
+ __asm volatile("vmsr fpscr, %0" : : "r"(__fpsr));
+ return (0);
+}
+
+ inline int
+
+# 138 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fegetexceptflag
+# 138 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+              (fexcept_t *flagp, int excepts)
+{
+ fexcept_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ *flagp = __fpsr & excepts;
+ return (0);
+}
+
+ inline int
+
+# 148 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fesetexceptflag
+# 148 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+              (const fexcept_t *flagp, int excepts)
+{
+ fexcept_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ __fpsr &= ~excepts;
+ __fpsr |= *flagp & excepts;
+ __asm volatile("vmsr fpscr, %0" : : "r"(__fpsr));
+ return (0);
+}
+
+ inline int
+
+# 160 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_feraiseexcept
+# 160 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+            (int excepts)
+{
+ fexcept_t __ex = excepts;
+
+ 
+# 164 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fesetexceptflag
+# 164 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+               (&__ex, excepts);
+ return (0);
+}
+
+ inline int
+
+# 169 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fetestexcept
+# 169 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+           (int excepts)
+{
+ fexcept_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ return (__fpsr & excepts);
+}
+
+ inline int
+
+# 178 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fegetround
+# 178 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+         (void)
+{
+ fenv_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ return (__fpsr & (0x00000000 | 0x00800000 | 0x00400000 | 0x00c00000));
+}
+
+ inline int
+
+# 187 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fesetround
+# 187 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+         (int round)
+{
+ fenv_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ __fpsr &= ~((0x00000000 | 0x00800000 | 0x00400000 | 0x00c00000));
+ __fpsr |= round;
+ __asm volatile("vmsr fpscr, %0" : : "r"(__fpsr));
+ return (0);
+}
+
+ inline int
+
+# 199 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fegetenv
+# 199 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+       (fenv_t *envp)
+{
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(*envp));
+ return (0);
+}
+
+ inline int
+
+# 207 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_feholdexcept
+# 207 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+           (fenv_t *envp)
+{
+ fenv_t __env;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__env));
+ *envp = __env;
+ __env &= ~((0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080));
+ __asm volatile("vmsr fpscr, %0" : : "r"(__env));
+ return (0);
+}
+
+ inline int
+
+# 219 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fesetenv
+# 219 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+       (const fenv_t *envp)
+{
+
+ __asm volatile("vmsr fpscr, %0" : : "r"(*envp));
+ return (0);
+}
+
+ inline int
+
+# 227 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_feupdateenv
+# 227 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+          (const fenv_t *envp)
+{
+ fexcept_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ __asm volatile("vmsr fpscr, %0" : : "r"(*envp));
+ 
+# 233 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_feraiseexcept
+# 233 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+             (__fpsr & (0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080));
+ return (0);
+}
+
+
+
+
+
+ inline int
+
+# 242 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_feenableexcept
+# 242 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+             (int __mask)
+{
+ fenv_t __old_fpsr, __new_fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__old_fpsr));
+ __new_fpsr = __old_fpsr |
+     ((__mask & (0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080)) << 8);
+ __asm volatile("vmsr fpscr, %0" : : "r"(__new_fpsr));
+ return ((__old_fpsr >> 8) & (0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080));
+}
+
+ inline int
+
+# 254 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fedisableexcept
+# 254 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+              (int __mask)
+{
+ fenv_t __old_fpsr, __new_fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__old_fpsr));
+ __new_fpsr = __old_fpsr &
+     ~((__mask & (0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080)) << 8);
+ __asm volatile("vmsr fpscr, %0" : : "r"(__new_fpsr));
+ return ((__old_fpsr >> 8) & (0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080));
+}
+
+ inline int
+
+# 266 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h"
+__vfp_fegetexcept
+# 266 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/sys/fenv.h" 3 4
+          (void)
+{
+ fenv_t __fpsr;
+
+ __asm volatile("vmrs %0, fpscr" : "=&r"(__fpsr));
+ return (__fpsr & (0x0002 | 0x0010 | 0x0001 | 0x0004 | 0x0008 | 0x0080));
+}
+# 16 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 2 3 4
+
+
+
+
+
+
+int 
+# 22 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_feclearexcept
+# 22 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+                (int excepts);
+int 
+# 23 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fegetexceptflag
+# 23 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+                  (fexcept_t *flagp, int excepts);
+int 
+# 24 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_feraiseexcept
+# 24 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+                (int excepts);
+int 
+# 25 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fesetexceptflag
+# 25 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+                  (const fexcept_t *flagp, int excepts);
+int 
+# 26 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fetestexcept
+# 26 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+               (int excepts);
+
+
+int 
+# 29 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fegetround
+# 29 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+             (void);
+int 
+# 30 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fesetround
+# 30 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+             (int rounding_mode);
+
+
+int 
+# 33 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fegetenv
+# 33 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+           (fenv_t *envp);
+int 
+# 34 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_feholdexcept
+# 34 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+               (fenv_t *envp);
+int 
+# 35 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_fesetenv
+# 35 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+           (const fenv_t *envp);
+int 
+# 36 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h"
+   __vfp_feupdateenv
+# 36 "/home/eshan/development/newlib/newlib-cygwin/newlib/libc/include/fenv.h" 3 4
+              (const fenv_t *envp);
+# 34 "fenv.c" 2
+
+# 1 "/home/eshan/development/newlib/c-arm-rtems5-newlib/arm-rtems5/newlib/targ-include/machine/acle-compat.h" 1 3 4
+# 36 "fenv.c" 2
+# 83 "fenv.c"
+
+# 83 "fenv.c"
+extern inline int __vfp_feclearexcept(int excepts);
+extern inline int __vfp_fegetexceptflag(fexcept_t *flagp, int excepts);
+extern inline int __vfp_fesetexceptflag(const fexcept_t *flagp, int excepts);
+extern inline int __vfp_feraiseexcept(int excepts);
+extern inline int __vfp_fetestexcept(int excepts);
+extern inline int __vfp_fegetround(void);
+extern inline int __vfp_fesetround(int round);
+extern inline int __vfp_fegetenv(fenv_t *envp);
+extern inline int __vfp_feholdexcept(fenv_t *envp);
+extern inline int __vfp_fesetenv(const fenv_t *envp);
+extern inline int __vfp_feupdateenv(const fenv_t *envp);
+extern inline int __vfp_feenableexcept(int __mask);
+extern inline int __vfp_fedisableexcept(int __mask);
+extern inline int __vfp_fegetexcept(void);
+# 35 "fenv-vfp.c" 2
+eshan@EDs-pc:~/development/newlib/newlib-cygwin/newlib/libm/machine/arm$ 
